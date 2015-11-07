@@ -1,0 +1,103 @@
+/* unvisited link */
+a:link {
+  color: white; }
+
+/* visited link */
+a:visited {
+  color: white; }
+
+/* mouse over link */
+a:hover {
+  color: hotpink; }
+
+/* selected link */
+a:active {
+  color: blue; }
+
+a {
+  text-decoration: none; }
+
+button {
+  display: inline-block;
+  font-size: 30px;
+  color: #006600; }
+
+.frame {
+  height: 300px;
+  /* equals max image height */
+  white-space: nowrap;
+  text-align: center;
+  margin: 1em 0;
+  margin: 0 auto;
+  margin-top: 30px; }
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
+img {
+  background: #3A6F9A;
+  vertical-align: middle;
+  max-height: 300px; }
+
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+
+body {
+  background: url("../images/bh-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  body nav {
+    text-align: center;
+    border: 1px solid white; }
+    body nav ul {
+      margin: 0;
+      font-weight: bold; }
+    body nav li {
+      display: inline-block;
+      font-size: 30px;
+      color: #D582FF;
+      padding-right: 100px; }
+
+.mixin1 {
+  background-color: rgba(213, 130, 255, 0.4);
+  font-family: "Courier New";
+  font-size: larger;
+  font-weight: normal;
+  width: 800px;
+  height: auto;
+  padding: 2%;
+  margin: 0 auto; }
+
+.spacer {
+  margin-bottom: 40px; }
+
+h1, p {
+  color: white;
+  font-weight: normal; }
+
+#meteor {
+  position: absolute;
+  z-index: -1;
+  display: none; }
+
+#imageContainer {
+  width: 200px;
+  height: auto;
+  margin: 0 auto; }
+
+.bourbon1 {
+  background: #ffd280;
+  margin-top: 40px;
+  text-align: center;
+  height: 20px; }
+
+.bourbon2 {
+  background: #4d0000; }
+
+/*# sourceMappingURL=main.css.map */

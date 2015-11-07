@@ -1,0 +1,83 @@
+nav ul {
+  margin: 0;
+  font-weight: bold; }
+nav li {
+  display: inline-block;
+  font-size: 30px;
+  color: #006600;
+  padding-right: 100px; }
+
+button {
+  display: inline-block;
+  font-size: 30px;
+  color: #006600; }
+
+body {
+  background-color: teal; }
+
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+
+.mixin1 {
+  background-color: orange;
+  opacity: 0.5;
+  font-size: 40px;
+  color: gray;
+  width: 500px;
+  height: 500px; }
+
+.mixin2 {
+  font-family: Courier New;
+  font-size: 100px;
+  font-weight: bold;
+  color: orange;
+  width: 1500px;
+  height: 500px; }
+
+.cell-1 {
+  width: 1%; }
+
+.cell-2 {
+  width: 2%; }
+
+.cell-3 {
+  width: 3%; }
+
+.cell-4 {
+  width: 4%; }
+
+.cell-5 {
+  width: 5%; }
+
+.cell-6 {
+  width: 6%; }
+
+.cell-7 {
+  width: 7%; }
+
+.cell-8 {
+  width: 8%; }
+
+.cell-9 {
+  width: 9%; }
+
+.cell-10 {
+  width: 10%; }
+
+.disc-list {
+  list-style-type: disc; }
+
+.circle-list {
+  list-style-type: circle; }
+
+.decimal-list {
+  list-style-type: decimal; }
+
+.square-list {
+  list-style-type: square; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,15 @@
+$default-green: #006600;
+$header-font-size: 30px;
+
+nav {   
+	ul {     
+		margin: 0;
+		font-weight: bold;   
+	}   
+	li {     
+		display: inline-block;
+		font-size: $header-font-size;
+		color: $default-green; 
+		padding-right: 100px; 
+	} 
+}

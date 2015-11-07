@@ -1,0 +1,99 @@
+@import 'links';
+@import 'button';
+@import 'images';
+@import '../bourbon/bourbon';
+
+$default-nav-color: #D582FF;
+$default-font-size: 30px;
+
+@mixin fontchanger($family, $size, $weight) {
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight
+}
+
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;        
+	-moz-border-radius: $radius;         
+	-ms-border-radius: $radius;          
+	-o-border-radius: $radius;             
+	border-radius: $radius;   
+} 
+
+.box { @include border-radius(10px); }
+
+@mixin superchanger( $color-one, $b, $c, $d) {
+	background-color: rgba($color-one, $b, $c, $d);
+	
+}
+
+body {
+	background: url("../images/bh-bg.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	nav {
+		text-align: center;
+		border: 1px solid white;
+
+		ul {     
+			margin: 0;
+			font-weight: bold;   
+		}   
+		li {     
+			display: inline-block;
+			font-size: $default-font-size;
+			color: $default-nav-color; 
+			padding-right: 100px; 
+		} 
+	}
+}
+
+.mixin1 {
+	@include superchanger( 213,130,255,.4);
+	@include fontchanger('Courier New', larger, normal);
+
+	width: 800px; 
+	height: auto;
+	padding: 2%;
+	margin: 0 auto;
+}
+
+.spacer {
+	margin-bottom: 40px;
+}
+
+h1, p {
+	color: white;
+	font-weight: normal;
+}
+
+#meteor {
+	position: absolute;
+	z-index: -1;
+	display: none;
+}
+#imageContainer {
+	width: 200px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.bourbon1 {
+	background: tint(orange, 50%); // bourbon
+	margin-top: 40px;
+	text-align: center;
+	height: 20px;
+}
+
+.bourbon2 {
+	background: shade(red, 70%); // bourbon
+}
+
+
+
+
+
+
+
+

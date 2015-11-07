@@ -1,0 +1,59 @@
+@import 'partial';
+@import 'button';
+@import 'body';
+
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;        
+	-moz-border-radius: $radius;         
+	-ms-border-radius: $radius;          
+	-o-border-radius: $radius;             
+	border-radius: $radius;   
+} 
+
+.box { @include border-radius(10px); }
+
+@mixin superchanger($opacity, $color) {
+	background-color: $color;
+	opacity: $opacity;
+}
+
+.mixin1 {
+	@include superchanger(.5, orange);
+	font-size: 40px;
+	color: gray;
+	width:500px; 
+	height:500px
+}
+
+
+@mixin fontchanger($family, $size, $weight) {
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight
+}
+
+.mixin2 {
+	@include fontchanger(Courier New, 100px, bold);
+	color: orange;
+	width:1500px; 
+	height:500px
+}
+
+
+@for $i from 1 through 10 {     
+	.cell-#{$i} {
+		width: 1% * $i;
+	}   
+}
+
+@each $style in disc, circle, decimal, square {     
+	.#{$style}-list {       
+		list-style-type: #{$style};     
+	}
+}
+
+
+
+
+
